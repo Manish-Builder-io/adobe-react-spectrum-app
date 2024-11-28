@@ -1,0 +1,115 @@
+.footerContainer {
+  background: var(--spectrum-global-color-gray-900);
+  position: absolute;
+  z-index: var(--spectrum-global-zindex-default);
+  width: 1208px;
+  right: 0;
+  bottom: 0;
+  height: 390px;
+  left: -2px;
+  padding: 153px 80px 88px;
+}
+
+.footerContent {
+  width: 100%;
+  max-width: 1209px;
+}
+
+.navigationContainer {
+  display: flex;
+  width: 100%;
+  gap: var(--spectrum-global-dimension-size-200);
+  font-size: var(--spectrum-global-dimension-font-size-150);
+  font-weight: var(--spectrum-global-font-weight-bold);
+  letter-spacing: 3.15px;
+  justify-content: space-between;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  gap: var(--spectrum-global-dimension-size-300);
+  color: var(--spectrum-global-color-static-white);
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.menuItem {
+  align-self: stretch;
+  margin: auto 0;
+  color: var(--spectrum-global-color-static-white);
+  cursor: pointer;
+  transition: opacity var(--spectrum-global-animation-duration-100) ease-in-out;
+}
+
+.menuItem:hover {
+  opacity: 0.8;
+}
+
+.menuItem:focus {
+  outline: 2px solid var(--spectrum-global-color-blue-500);
+  outline-offset: 2px;
+}
+
+.highlightedMenuItem {
+  composes: menuItem;
+  color: var(--spectrum-semantic-negative-color-text);
+}
+
+.authSection {
+  display: flex;
+  align-items: center;
+  gap: var(--spectrum-global-dimension-size-300);
+}
+
+.userIcon {
+  aspect-ratio: 0.89;
+  object-fit: contain;
+  object-position: center;
+  width: var(--spectrum-global-dimension-size-225);
+  align-self: stretch;
+  margin: auto 0;
+}
+
+.signInButton {
+  align-self: stretch;
+  background: var(--spectrum-global-color-static-white);
+  padding: var(--spectrum-global-dimension-size-100)
+    var(--spectrum-global-dimension-size-200);
+  border: none;
+  cursor: pointer;
+  transition: background var(--spectrum-global-animation-duration-100)
+    ease-in-out;
+}
+
+.signInButton:hover {
+  background: var(--spectrum-global-color-gray-100);
+}
+
+.signInButton:focus {
+  outline: 2px solid var(--spectrum-global-color-blue-500);
+  outline-offset: 2px;
+}
+
+.footerDescription {
+  color: var(--spectrum-global-color-gray-500);
+  font-size: var(--spectrum-global-dimension-font-size-200);
+  font-weight: var(--spectrum-global-font-weight-regular);
+  margin-top: var(--spectrum-global-dimension-size-250);
+  width: 477px;
+}
+
+@media (max-width: 991px) {
+  .footerContainer {
+    max-width: 100%;
+    padding: var(--spectrum-global-dimension-size-1000)
+      var(--spectrum-global-dimension-size-200) 0;
+  }
+
+  .footerContent,
+  .navigationContainer,
+  .menuContainer,
+  .footerDescription {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,108 @@
+.footer {
+  background-color: rgba(32, 32, 32, 1);
+  position: absolute;
+  z-index: 0;
+  width: 1208px;
+  right: 0;
+  bottom: 0;
+  left: -2px;
+  height: 390px;
+  padding: 153px 80px 88px;
+}
+
+.footerContent {
+  display: flex;
+  width: 100%;
+  max-width: 1209px;
+  flex-direction: column;
+}
+
+.topSection {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3.15px;
+  justify-content: space-between;
+}
+
+.navigationMenu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #fff;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin: auto 0;
+}
+
+.navLink {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3.15px;
+  cursor: pointer;
+}
+
+.saleLink {
+  composes: navLink;
+  color: #f35959;
+}
+
+.authSection {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #000;
+}
+
+.authIcon {
+  aspect-ratio: 0.89;
+  object-fit: contain;
+  object-position: center;
+  width: 16px;
+}
+
+.signInButton {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 3.15px;
+  cursor: pointer;
+}
+
+.footerText {
+  color: #b5b5b5;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 25px;
+  width: 477px;
+}
+
+@media (max-width: 991px) {
+  .footer {
+    max-width: 100%;
+    padding: 100px 20px 0;
+  }
+
+  .footerContent {
+    max-width: 100%;
+  }
+
+  .topSection {
+    max-width: 100%;
+  }
+
+  .navigationMenu {
+    max-width: 100%;
+  }
+
+  .footerText {
+    max-width: 100%;
+  }
+}
